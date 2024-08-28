@@ -1,0 +1,29 @@
+.nav-item {
+    position: relative;
+    color: #4a5568; /* text-gray-700 */
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem; /* text-md */
+    font-weight: 500; /* font-medium */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #4a5568; /* text-gray-700 */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover::after {
+    width: 100%;
+  }
+  
+  .nav-item:hover {
+    color: #1a202c; /* Darker shade of gray for hover effect */
+  }
+  
